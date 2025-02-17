@@ -1,0 +1,23 @@
+---
+title: "Data Dictionary for Assignment 3 - Aaman Gafur"
+author: "Aaman Gafur"
+date: "2025-02-16"
+output: html_document
+---
+
+```{r}
+
+library(knitr)
+
+
+VariableName <- c("Years","Months","Districts","Amount")
+DataType <- c("Integer","Integer","Categorical(String)","Integer")
+Description <- c("The year of natural gas consumption","The month of natural gas consumption","District where consumption was recorded","Volume of natural gas consumed")
+Example <- c(2020, 11, "Adalar", 366209.477)
+mydataFrame <- data.frame(VariableName,DataType,Description,Example)
+
+
+kable(mydataFrame)
+```
+
+
